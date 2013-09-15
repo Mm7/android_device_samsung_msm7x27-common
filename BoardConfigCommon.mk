@@ -137,6 +137,7 @@ else
 	WIFI_DRIVER_MODULE_ARG := "ifname=wlan0 fwmode=1"
 	WIFI_DRIVER_MODULE_PATH := /system/wifi/ar6000.ko
 	WIFI_DRIVER_MODULE_NAME := ar6000
+
 endif
 
 ## Wi-Fi Hotspot
@@ -185,4 +186,4 @@ BOARD_RECOVERY_HANDLES_MOUNT := true
 TARGET_RECOVERY_FSTAB := device/samsung/msm7x27-common/ramdisk/fstab.msm7x27
 
 ## OTA script extras file (build/tools/releasetools)
-TARGET_OTA_EXTRAS_FILE := device/samsung/msm7x27-common/releasetools-extras.txt
+#TARGET_OTA_EXTRAS_FILE := device/samsung/msm7x27-common/releasetools-extras.txt
