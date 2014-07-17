@@ -38,9 +38,11 @@ PRODUCT_PACKAGES += \
     libaudioutils
 
 ## FM Support
+ifeq (0,1)
 PRODUCT_PACKAGES += \
     Effem \
     libfmradio.bcm2049
+endif
 
 ## GPS
 PRODUCT_PACKAGES += \
