@@ -14,6 +14,7 @@
 
 ## Some gapps
 $(call inherit-product-if-exists, vendor/google/gapps.mk)
+$(call inherit-product-if-exists, vendor/qcom/msm7x27/qcom-vendor.mk)
 
 ## Device common overlay
 DEVICE_PACKAGE_OVERLAYS := device/samsung/msm7x27-common/overlay
@@ -27,8 +28,6 @@ PRODUCT_PACKAGES += \
 ## Display
 PRODUCT_PACKAGES += \
     gralloc.msm7x27 \
-    hwcomposer.msm7x27 \
-    copybit.msm7x27 \
     libgenlock \
     liboverlay \
     libtilerenderer 
